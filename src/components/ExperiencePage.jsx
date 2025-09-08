@@ -108,7 +108,7 @@ const ExperiencePage = () => {
                 <h3 className="text-xl md:text-2xl font-semibold mb-4 text-white/70">Highlights</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {exp.highlights.map((highlight, i) => (
-                    <div key={i} className="p-4 rounded-xl bg-gray-500/10 backdrop-blur-md border border-blue-300/20 text-white font-medium hover:bg-blue-500/20 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/40 transition-all">
+                    <div key={i} className="p-4 rounded-xl bg-gray-500/10 backdrop-blur-md border  border-gray-300/30 text-white font-medium  hover:bg-gray-500/20 hover:scale-105 hover:shadow-lg hover:shadow-gray-500/40 transition-all">
                       <h4 className="font-semibold mb-2">{highlight.title}</h4>
                       <p>{highlight.details}</p>
                     </div>
