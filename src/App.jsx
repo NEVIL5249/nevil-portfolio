@@ -6,6 +6,7 @@ import Features from "./components/Features";
 import TechArsenal from "./components/TechArsenal";
 import CallToAction from "./components/CallToAction";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import ExperiencePage from "./components/ExperiencePage";
 import ProjectsPage from "./components/ProjectsPage";
 import ContactPage from "./components/ContactPage"; 
@@ -25,6 +26,7 @@ const PROFILE = {
 export default function App() {
   return (
 <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <div className="bg-black text-white font-sans">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 const Hero = () => {
@@ -84,18 +85,22 @@ const Hero = () => {
 
 <div className="mt-10 flex flex-wrap justify-center gap-6">
 
-  <Button 
-    variant="outline" 
-    className="hero-button border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black"
-  >
-    View Projects
-  </Button>
+  <Link to="/projects">
+    <Button 
+      variant="outline" 
+      className="hero-button border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black"
+    >
+      View Projects
+    </Button>
+  </Link>
 
-  <Button 
-    className="hero-button bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg"
-  >
-    Download Resume
-  </Button>
+  <a href="/resume.pdf" download="resume.pdf">
+    <Button 
+      className="hero-button bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg"
+    >
+      Download Resume
+    </Button>
+  </a>
 
 </div>
 

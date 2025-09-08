@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const CallToAction = () => {
@@ -26,13 +27,17 @@ const CallToAction = () => {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-wrap gap-6 justify-center">
-          <Button className="hero-button bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg px-8 py-3 text-lg font-semibold flex items-center gap-2 transform hover:scale-105 transition-all duration-300">
-            View Projects <ArrowRight size={20} />
-          </Button>
+          <Link to="/projects">
+            <Button className="hero-button bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-lg px-8 py-3 text-lg font-semibold flex items-center gap-2 transform hover:scale-105 transition-all duration-300">
+              View Projects <ArrowRight size={20} />
+            </Button>
+          </Link>
 
-          <Button className="hero-button bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300">
-            See Experience<ArrowRight size={20} />
-          </Button>
+          <Link to="/experience">
+            <Button className="hero-button bg-transparent border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-300">
+              See Experience<ArrowRight size={20} />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
